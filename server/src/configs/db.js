@@ -1,6 +1,5 @@
 const mongoose = require('mongoose');
 
-
 const DB_CAR = 'mongodb://localhost:27017/drivium';
 
 mongoose
@@ -23,3 +22,5 @@ process.on('SIGINT', () => {
     process.exit(0);
   });
 });
+
+module.exports = mongoose;
