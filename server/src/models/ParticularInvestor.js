@@ -1,6 +1,6 @@
-const { Schema, model } = require("mongoose");
+const mongoose = require("mongoose");
 
-const userSchema = new Schema(
+const userSchema = new mongoose.Schema(
   {
     email: {
       type: String,
@@ -21,6 +21,7 @@ const userSchema = new Schema(
     address: { type: String, lowercase: true },
     zipcode: { type: Number },
     city: { type: String, lowercase: true },
+    phone: { type: Number, maxlength: 9 },
     bankAccount: { type: String, maxlength: 24 },
     creditCard: { type: String, maxlength: 16 },
     monthExpirationDate: { type: Number },
@@ -42,5 +43,4 @@ const userSchema = new Schema(
   }
 );
 
-const model = model("ParticularInvestor", userSchema);
-module.exports = model;
+module.exports = mongoose.model("ParticularInvestor", userSchema);

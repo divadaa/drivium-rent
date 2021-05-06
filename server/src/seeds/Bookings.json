@@ -1,0 +1,16 @@
+[
+  {
+    "email": "pepe@pepe.com",
+    "password": "1234.",
+    "phone": "666555444",
+    "brand": "Mercedes-Benz",
+    "model": "500 SEL",
+    "plate": "M1234OU",
+    "type": "saloon",
+    "fuelType": "gasoline",
+    "pictures": "https://www.carpixel.net/w/259999693fd679ff544e29a54bb78a7c/mercedes-benz-500-sel-wallpaper-hd-73746.jpg",
+    "creditCard": "123456789",
+    "monthExpirationDate": 7,
+    "yearExpirationDate": 2021
+  }
+]

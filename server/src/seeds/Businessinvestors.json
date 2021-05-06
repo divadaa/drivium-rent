@@ -1,0 +1,26 @@
+[
+  {
+    "companyName": "company1",
+    "vatNumber": "B012345678",
+    "email": "pepe@company1.com",
+    "password": "1234."
+  },
+  {
+    "companyName": "company2",
+    "vatNumber": "B87654321",
+    "email": "pepe@company2.com",
+    "password": "1234."
+  },
+  {
+    "companyName": "company3",
+    "vatNumber": "B39749320",
+    "email": "pepe@company3.com",
+    "password": "1234."
+  },
+  {
+    "companyName": "company4",
+    "vatNumber": "B83749030",
+    "email": "pepe@company4.com",
+    "password": "1234."
+  }
+]

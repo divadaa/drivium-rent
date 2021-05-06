@@ -1,9 +1,10 @@
 const route = require('express').Router();
 const passport = require('../configs/passport');
 
+
 route.post('/register', (req, res, next) => {
   try {
-    passport.authenticate('register', (err, user) => {
+    passport.authenticate('registerbussinesinvestor', (err, user) => {
       if (err) {
         return res.status(402).json({ data: err.message });
       }
@@ -22,16 +23,6 @@ route.post('/register', (req, res, next) => {
   }
 });
 
-route.get(
-  '/google',
-  passport.authenticate('google', {
-    scope: ['profile', 'email']
-  })
-);
-
-route.get('/google/redirect', passport.authenticate('google'), (req, res) => {
-  res.status(200).redirect(process.env.CLIENT_URL || 'http://localhost:3000');
-});
 
 route.post('/login', (req, res, next) => {
   try {

@@ -10,7 +10,10 @@ const BookingSchema = new Schema(
       type: mongoose.Schema.Types.ObjectId,
       ref: "User",
     },
-    carStock: [CarStockSchema],
+    productId: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "Car",
+    },
     pickup: {
       type: Date,
       required: true,
@@ -27,7 +30,6 @@ const BookingSchema = new Schema(
       type: String,
       enum: ["paid", "pending-payment"],
       default: "pending-payment",
-      required: true,
     },
   },
   {

@@ -5,6 +5,7 @@ const MongoStore = require('connect-mongo')(session);
 
 const mongoose = require('./configs/db');
 const passport = require('./configs/passport');
+const apiRoutes = require('./routes');
 
 const app = express();
 
@@ -26,16 +27,9 @@ app.use(
 app.use(passport.initialize());
 app.use(passport.session());
 
+app.use('/api', apiRoutes);
+
 const PORT = 3000;
-
-app.get('/', (req, res) => {
-  console.info('request');
-  res.send('Hello, drivium!');
-});
-
-app.post('/', (req, res) => {
-  res.send('post, request');
-});
 
 app.listen(PORT, () => {
   console.info(`> listening on port ${PORT}`);

@@ -1,0 +1,17 @@
+[
+  {
+    "email": "pepe@pepe.com",
+    "password": "1234.",
+    "phone": "666555444"
+  },
+  {
+    "email": "pepe2@pepe.com",
+    "password": "1234.",
+    "phone": "666555333"
+  },
+  {
+    "email": "pepe3@pepe.com",
+    "password": "1234.",
+    "phone": "666555222"
+  }
+]
