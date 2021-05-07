@@ -2,16 +2,43 @@
   {
     "email": "pepe@pepe.com",
     "password": "1234.",
-    "phone": "666555444"
+    "phone": "666555444",
+    "licenceNumber": "2933443M",
+    "monthExpirationLicence": "03",
+    "yearExpirationLicence": "22",
+    "address": "C/ Llevant",
+    "zipcode": "39483",
+    "city": "Villajoyosa",
+    "creditCard": "1234567890123456",
+    "monthExpirationDate": "02",
+    "yearExpirationDate": "22"
   },
   {
     "email": "pepe2@pepe.com",
     "password": "1234.",
-    "phone": "666555333"
+    "phone": "666555333",
+    "licenceNumber": "1933443M",
+    "monthExpirationLicence": "04",
+    "yearExpirationLicence": "23",
+    "address": "C/ Alonso Cano 10",
+    "zipcode": "28003",
+    "city": "Madrid",
+    "creditCard": "1234567890120000",
+    "monthExpirationDate": "05",
+    "yearExpirationDate": "25"
   },
   {
     "email": "pepe3@pepe.com",
     "password": "1234.",
-    "phone": "666555222"
+    "phone": "666555222",
+    "licenceNumber": "3934443M",
+    "monthExpirationLicence": "08",
+    "yearExpirationLicence": "25",
+    "address": "C/ Rayo 23",
+    "zipcode": "45799",
+    "city": "Málaga",
+    "creditCard": "1234567890125678",
+    "monthExpirationDate": "10",
+    "yearExpirationDate": "26"
   }
 ]

@@ -45,6 +45,10 @@ const CarSchema = new Schema(
     },
     weightType: {
       type: String
+    },
+    pricePerDay: {
+      type: Number,
+      required: true,
     }
   },
   {

@@ -5,7 +5,8 @@
     "plate": "M1234MU",
     "type": "sportcar",
     "fuelType": "gasoline",
-    "pictures": "https://www.tomhartleyjnr.com/wp-content/uploads/2020/12/Ferrari-F40-047.jpg"
+    "pictures": "https://www.tomhartleyjnr.com/wp-content/uploads/2020/12/Ferrari-F40-047.jpg",
+    "pricePerDay": 2000
   },
   {
     "brand": "Mercedes-Benz",
@@ -13,7 +14,8 @@
     "plate": "M1234OU",
     "type": "saloon",
     "fuelType": "gasoline",
-    "pictures": "https://www.carpixel.net/w/259999693fd679ff544e29a54bb78a7c/mercedes-benz-500-sel-wallpaper-hd-73746.jpg"
+    "pictures": "https://www.carpixel.net/w/259999693fd679ff544e29a54bb78a7c/mercedes-benz-500-sel-wallpaper-hd-73746.jpg",
+    "pricePerDay": 500
   },
   {
     "brand": "Mini",
@@ -21,7 +23,8 @@
     "plate": "M3948AM",
     "type": "urban",
     "fuelType": "gasoline",
-    "pictures": "hhttps://assets.catawiki.nl/assets/2018/10/31/8/7/b/87be2d41-1cd8-4061-8ff1-ab6fbee8e2b4.jpg"
+    "pictures": "hhttps://assets.catawiki.nl/assets/2018/10/31/8/7/b/87be2d41-1cd8-4061-8ff1-ab6fbee8e2b4.jpg",
+    "pricePerDay": 250
   },
   {
     "brand": "Toyota",
@@ -29,6 +32,7 @@
     "plate": "3874LHT",
     "type": "4x4",
     "fuelType": "diesel",
-    "pictures": "https://www.motor.es/fotos-noticias/2020/09/toyota-land-cruiser-2021-202070532-1598956073_1.jpg"
+    "pictures": "https://www.motor.es/fotos-noticias/2020/09/toyota-land-cruiser-2021-202070532-1598956073_1.jpg",
+    "pricePerDay": 150
   }
 ]

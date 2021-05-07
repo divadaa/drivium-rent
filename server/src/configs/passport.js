@@ -1,46 +1,8 @@
 const passport = require('passport');
-// const GoogleStrategy = require('passport-google-oauth20').Strategy;
 const { Strategy: LocalStrategy } = require('passport-local');
-const uuid = require('uuid').v4
-const bcrypt = require('bcrypt')
+const bcrypt = require('bcrypt');
 
 const User = require('../models/User');
-
-// passport.use(
-//   new GoogleStrategy(
-//     {
-//       clientID: process.env.GOOGLE_CLIENT_ID,
-//       clientSecret: process.env.GOOGLE_CLIENT_SECRET,
-//       callbackURL: '/api/auth/google/redirect'
-//     },
-//     (_accessToken, _refreshToken, profile, done) => {
-//       const { id: googleId, displayName, name, emails } = profile;
-
-//       const { value: email } = emails[0];
-
-//       User.findOne({ email })
-//         .then((user) => {
-//           const salt = bcrypt.genSaltSync(12);
-//           const hash = bcrypt.hashSync(uuid(), salt);
-
-//           if (!user) {
-//             const newUser = new User({
-//               email,
-//               googleId,
-//               password: hash
-//             });
-
-//             newUser.save().then(() => {
-//               done(null, newUser);
-//             });
-//           } else {
-//             done(null, user);
-//           }
-//         })
-//         .catch((err) => done(err, null));
-//     }
-//   )
-// );
 
 passport.use(
   'register',
