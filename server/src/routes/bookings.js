@@ -58,15 +58,19 @@ router.post('/', [isAuthenticated], async (req, res, next) => {
   }
 });
 
-// TODO: Crear una función para que un USER pueda eliminar un booking SUYO dada la id del booking
-// 1. Crear endpoint de tipo DELETE
-// 2. Recibir por param el /:bookingId
-// 3. Eliminar un Booking con el campo userId igual a req.user y que tenga _id igual a bookingId
+router.delete('/:bookingId',[isAuthenticated], async (req, res, next) => {
+  try {
+    const bookingId = req.params.bookingId;
+    const userId = req.user._id;
 
-// ////////////////////////////////////////////////////////////////////////////////////////
-// TODO: Crear proyecto en React que permita:
-// 1. Listar todos los coches en una Home
-// 2. Logearme para poder crear un Booking
-// 3. Ver mi lista de Bookings y eliminar alguno de ellos
+    await BookingModel.findOneAndDelete({ userId, _id: bookingId })
+    res.status(200).json({
+      success: true
+    })
+  } catch (error) {
+    console.error('> error deleting a booking: ', error.message)
+    next(new Error('error deleting a booking'))
+  }
+})
 
 module.exports = router;
