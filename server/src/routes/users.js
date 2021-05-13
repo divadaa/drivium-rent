@@ -22,6 +22,14 @@ route.post('/register', (req, res, next) => {
   }
 });
 
+route.get('/profile', (req, res, next) => {
+  if (req.user) {
+    return res.status(200).json({ data: req.user });
+  }
+
+  return res.status(401).json({ data: 'Not logged in' });
+});
+
 route.get(
   '/google',
   passport.authenticate('google', {

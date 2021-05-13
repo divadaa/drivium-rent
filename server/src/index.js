@@ -1,5 +1,6 @@
 require('dotenv').config();
 const express = require('express');
+const cors = require('cors');
 const session = require('express-session');
 const MongoStore = require('connect-mongo')(session);
 
@@ -9,6 +10,12 @@ const apiRoutes = require('./routes');
 
 const app = express();
 
+app.use(
+  cors({
+    origin: true,
+    credentials: true
+  })
+);
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
@@ -29,7 +36,7 @@ app.use(passport.session());
 
 app.use('/api', apiRoutes);
 
-const PORT = 3000;
+const PORT = process.env.PORT;
 
 app.listen(PORT, () => {
   console.info(`> listening on port ${PORT}`);
