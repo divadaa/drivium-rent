@@ -8,12 +8,12 @@ const isAuthenticated = require('../middlewares/isAuthenticated');
 
 router.get('/', [isAuthenticated], async (req, res, next) => {
   try {
-    const userBookings = await BookingModel.find({ userId: req.user });
+    const userBookings = await BookingModel.find({ userId: req.user }).populate('productId');
 
     res.status(200).json({
       success: true,
       count: userBookings.length,
-      data: { userBookings }
+      data: userBookings
     });
   } catch (error) {
     next(error);
