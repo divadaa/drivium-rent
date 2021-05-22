@@ -5,6 +5,9 @@ const UserModel = require('../models/User');
 const users = require('../seeds/Users.json');
 
 const createUsers = async (req, res) => {
+  await UserModel.deleteMany({});
+
+
   try {
     const usersWithPassword = users.map((user) => {
       return {
