@@ -16,6 +16,8 @@ const userSchema = new Schema(
     },
 
     password: { type: String, required: true },
+    name: { type: String, required: true },
+    surname: { type: String, required: true},
     googleId: { type: String },
     phone: { type: Number, maxlength: 9 },
     licenceNumber: { type: String, lowercase: true },

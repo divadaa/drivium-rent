@@ -2,6 +2,8 @@
   {
     "email": "pepe@pepe.com",
     "password": "1234.",
+    "name": "Pepe",
+    "surname": "Jones",
     "phone": "666555444",
     "licenceNumber": "2933443M",
     "monthExpirationLicence": "03",
@@ -16,6 +18,8 @@
   {
     "email": "pepe2@pepe.com",
     "password": "1234.",
+    "name": "Paco",
+    "surname": "Wagner",
     "phone": "666555333",
     "licenceNumber": "1933443M",
     "monthExpirationLicence": "04",
@@ -30,6 +34,8 @@
   {
     "email": "pepe3@pepe.com",
     "password": "1234.",
+    "name": "Michael",
+    "surname": "Corleone",
     "phone": "666555222",
     "licenceNumber": "3934443M",
     "monthExpirationLicence": "08",
