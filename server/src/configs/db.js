@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
-// const DB_CAR = 'mongodb://localhost:27017/drivium';
-const DB_CAR = process.env.DB_URI;
+const DB_CAR = 'mongodb://localhost:27017/drivium';
+// const DB_CAR = process.env.DB_URI;
 
 mongoose
   .connect(DB_CAR, {
