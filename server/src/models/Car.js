@@ -30,6 +30,11 @@ const CarSchema = new Schema(
       lowercase: true
     },
 
+    info: {
+      type: String,
+      required: true,
+    },
+
     fuelType: {
       type: String,
       required: true

@@ -2,6 +2,7 @@
   {
     "brand": "Ferrari",
     "model": "F40",
+    "info": "El Ferrari F40 es un automóvil superdeportivo berlinetta de 2 puertas biplaza, producido por el fabricante de automóviles italiano Ferrari. Su fabricación comenzó en 1987 con motivo del 40 aniversario de la fundación de la marca.Su precio, su comportamiento y su concepto lo convirtieron en un clásico instantáneo y hoy en día, es recordado junto al 288 GTO como el último gran Ferrari de la vieja escuela.",
     "plate": "M1234MU",
     "type": "sportcar",
     "fuelType": "gasoline",
@@ -11,6 +12,7 @@
   {
     "brand": "Mercedes-Benz",
     "model": "500 SEL",
+    "info": "La serie W126 se lanzó a finales de 1979, reemplazando al W116. Comparado con su predecesor, el W126 era más aerodinámico, seguro, potente y consumía menos combustible. La línea del coche se utilizó en muchos otros Mercedes que fueron lanzados posteriormente. Se introdujo2​ un modelo cupé basado en el propio coche con los 380SEC y 500SEC. Tuvo unas cifras de ventas muy buenas alcanzado 818.063 unidades para la versión sedán y 74.060 unidades para el cupé.",
     "plate": "M1234OU",
     "type": "saloon",
     "fuelType": "gasoline",
@@ -20,6 +22,7 @@
   {
     "brand": "Mini",
     "model": "Cooper",
+    "info": "Originalmente fue concebido como vehículo económico, con bajo consumo de combustible, pero la versión Cooper resultó ser un brioso coche que con ese éxito se transformó en el coche deportivo utilitario.",
     "plate": "M3948AM",
     "type": "urban",
     "fuelType": "gasoline",
@@ -29,6 +32,7 @@
   {
     "brand": "Toyota",
     "model": "Land Cruiser",
+    "info":"Producidos por el fabricante japonés de automóviles Toyota desde el año 1951. Es el modelo en serie más antiguo de Toyota en producción1. Las ventas totales de los modelos Land Cruiser alcanzan más de 10 millones de unidades en todo el mundo",
     "plate": "3874LHT",
     "type": "4x4",
     "fuelType": "diesel",
